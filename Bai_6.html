@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var array=[];
+    var word='';
+    for(var i=0;i<5;i++)
+    {
+        array[i]=prompt('nhap mang o vi tri '+i);
+    }
+    for(var i=0;i<array.length;i++)
+    {word='';
+        for(var j=0;j<array[i].length;j++){
+        if(array[i][j]=='-')
+        {
+            word+='_';
+        }else
+            {
+            word+=array[i][j];
+            }
+        }
+        array[i]=word;
+    }
+    alert(array);
+</script>
+</body>
+</html>
